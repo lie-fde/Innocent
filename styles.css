@@ -37,7 +37,7 @@ footer {
 .buttons {
   outline: none;
   border: 5px solid #404B69; /* Reduced border thickness for better responsiveness */
-  font-size: 1.5rem; /* Adjust font size for readability */
+  font-size: 0rem; /* Adjust font size for readability */
   font-family: 'Arvo', cursive;
   font-weight: 900;
   color: #DA0463;
