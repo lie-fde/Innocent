@@ -43,15 +43,15 @@ footer {
   color: #DA0463;
   text-shadow: 2px 0 #DBEDF3;
   border-radius: 10px; /* Reduced border radius for better proportion */
-  width: 12vw; /* Responsive width */
-  height: 12vw; /* Responsive height */
+  width: 15vw; /* Responsive width */
+  height: 15vw; /* Responsive height */
   min-width: 100px; /* Minimum width for very small screens */
   min-height: 100px; /* Minimum height for very small screens */
   text-align: center;
   margin: 5px; /* Adjusted margin */
   background-color: white;
-  background-size: cover;
-  background-position: center;
+  background-size: cover; /* Ensure button background images cover the button */
+  background-position: center; /* Center button background image */
   position: relative;
 }
 
@@ -90,10 +90,10 @@ footer {
     font-size: 3rem; /* Adjust for medium screens */
   }
   .buttons {
-    width: 15vw;
-    height: 15vw;
-    min-width: 80px;
-    min-height: 80px;
+    width: 18vw;
+    height: 18vw;
+    min-width: 90px;
+    min-height: 90px;
   }
 }
 
@@ -102,10 +102,10 @@ footer {
     font-size: 2.5rem; /* Adjust for small screens */
   }
   .buttons {
-    width: 20vw;
-    height: 20vw;
-    min-width: 70px;
-    min-height: 70px;
+    width: 22vw;
+    height: 22vw;
+    min-width: 80px;
+    min-height: 80px;
   }
 }
 
@@ -114,9 +114,9 @@ footer {
     font-size: 2rem; /* Adjust for extra small screens */
   }
   .buttons {
-    width: 25vw;
-    height: 25vw;
-    min-width: 60px;
-    min-height: 60px;
+    width: 28vw;
+    height: 28vw;
+    min-width: 70px;
+    min-height: 70px;
   }
 }
