@@ -1,0 +1,89 @@
+/* General Reset and Styling */
+body {
+  text-align: center;
+  background-image: url('./images/background.png');
+  background-size: cover; /* Ensure background covers entire screen */
+  background-position: center; /* Center the background image */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arvo', cursive;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  text-shadow: 3px 0 #DA0463;
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+/* Container for Buttons */
+.set {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping to next line if needed */
+  justify-content: center;
+  gap: 10px; /* Space between buttons */
+  margin: 10% auto;
+}
+
+/* Styling for Buttons */
+.buttons {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 0rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+  background-size: cover; /* Ensure button background images cover the button */
+  background-position: center; /* Center button background image */
+}
+
+/* Specific Button Background Images */
+.w { background-image: url('./images/1.png'); }
+.a { background-image: url('./images/2.png'); }
+.s { background-image: url('./images/3.png'); }
+.d { background-image: url('./images/4.jpg'); }
+.j { background-image: url('./images/5.png'); }
+.k { background-image: url('./images/6.png'); }
+.l { background-image: url('./images/7.png'); }
+
+/* Button Animation Styles */
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.play-animation {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  animation: playAnimation 0.1s ease;
+}
+
+@keyframes playAnimation {
+  0% { transform: scale(1); opacity: 1; }
+  100% { transform: scale(1.2); opacity: 0; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .set {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    align-items: center; /* Center buttons */
+  }
+}
